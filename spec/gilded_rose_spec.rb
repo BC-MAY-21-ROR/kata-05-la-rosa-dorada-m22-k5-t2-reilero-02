@@ -1,4 +1,6 @@
-require File.join(File.dirname(__FILE__), 'gilded_rose')
+# frozen_string_literal: true
+
+require 'gilded_rose'
 
 describe GildedRose do
   describe '#update_quality' do

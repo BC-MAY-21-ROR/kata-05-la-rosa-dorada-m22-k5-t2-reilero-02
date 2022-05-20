@@ -1,4 +1,5 @@
 #!/usr/bin/ruby -w
+# frozen_string_literal: true
 
 require File.join(File.dirname(__FILE__), 'gilded_rose')
 
@@ -17,7 +18,7 @@ items = [
 ]
 
 days = 2
-days = ARGV[0].to_i + 1 if ARGV.size > 0
+days = ARGV[0].to_i + 1 if ARGV.size.positive?
 
 gilded_rose = GildedRose.new items
 (0...days).each do |day|
