@@ -107,6 +107,7 @@ GEM
       equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-linux
 
 DEPENDENCIES
@@ -117,4 +118,4 @@ DEPENDENCIES
   sandi_meter (~> 1.2)
 
 BUNDLED WITH
-   2.3.13
+   2.3.7

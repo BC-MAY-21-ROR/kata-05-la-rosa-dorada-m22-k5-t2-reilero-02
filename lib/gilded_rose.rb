@@ -48,8 +48,6 @@ class GildedRose
   end
 end
 
-
-
 # Class Item
 class Item
   attr_accessor :name, :sell_in, :quality
@@ -66,7 +64,7 @@ class Item
 end
 
 item1 = Item.new('Aged Brie', 5, 50)
-item2 = Item.new('Sulfuras' , 2, 25)
+item2 = Item.new('Sulfuras', 2, 25)
 item3 = Item.new('Backstage passes', 15, 22)
 
 items = [item1, item2, item3]
