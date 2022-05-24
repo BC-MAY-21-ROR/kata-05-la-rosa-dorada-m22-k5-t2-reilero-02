@@ -11,6 +11,7 @@ describe GildedRose do
     before(:each) do
       @items = Item.new
       @rose = GildedRose.new(@items)
+      variable = "Nueva"
     end
 
     describe '#update_quality' do     
