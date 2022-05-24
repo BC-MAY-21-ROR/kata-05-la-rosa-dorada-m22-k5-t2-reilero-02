@@ -1,12 +1,27 @@
 # frozen_string_literal: true
+require 'rspec'
+require_relative'../lib/gilded_rose'
 
-require 'gilded_rose'
 
 describe GildedRose do
-  describe '#update_quality' do
-    example_item = Item.new("Example", 10, 10)
-    it 'check and update quality and sell in of given item' do
-      expect(example_item)
+  
+  
+  describe GildedRose do
+    
+    before(:each) do
+      @items = Item.new
+      @rose = GildedRose.new(@items)
+    end
+
+    describe '#update_quality' do     
+    
+    list_items = [example_item,example_itemTwo,example_itemThree]
+    
+    Test_rose = GildedRose.new.update_quality
+    Test_rose(list_items)
+
+    it "aged item increases by two if the sell in days havent passed " do
+      expect(list_items[0].quality).to eql(12)
     end
   end
 end
