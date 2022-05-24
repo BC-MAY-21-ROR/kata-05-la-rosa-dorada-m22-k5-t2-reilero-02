@@ -46,11 +46,11 @@ Para aclarar: un artículo nunca puede tener una `calidad` superior a `50`, sin 
 
 Condiciones :
 
-item no mas de 50
-item no puede ser menos de 0 ni es negativo
-Solamente sulfuras puede tener 80 ni se puede vender
-Pasada la venta decrece de a 2
-Metodo envejecer aumenta de a 1 uno hasta el sell in y aumenta de a 2 despues del sell in
-Metodo backstage toma dos posibilidades,si el sell in es de 10 o menos aumenta de a dos.
-Si es de 5 o menos aumenta de a 3
+~1. item no mas de 50~
+2. item no puede ser menos de 0 ni es negativo
+3. Solamente sulfuras puede tener 80 ni se puede vender
+4. Pasada la venta decrece de a 2
+5. Metodo envejecer aumenta de a 1 uno hasta el sell in 6. y aumenta de a 2 despues del sell in
+6. Metodo backstage toma dos posibilidades,si el sell in es de 10 o menos aumenta de a dos.
+7. Si es de 5 o menos aumenta de a 3
 Decrece calidad a 0 despues del sell in
