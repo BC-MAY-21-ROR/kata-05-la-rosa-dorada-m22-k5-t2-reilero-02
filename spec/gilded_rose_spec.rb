@@ -1,31 +1,73 @@
 # frozen_string_literal: true
-
-require_relative 'gilded_rose'
+require 'rspec'
+require_relative '../lib/gilded_rose'
 
 describe GildedRose do
-<<<<<<< HEAD
-  
-  
-  describe GildedRose do
-    
-    before(:each) do
-      @items = Item.new
-      @rose = GildedRose.new(@items)
-      variable = "Nueva"
-    end
-
-    describe '#update_quality' do     
-    
-    list_items = [example_item,example_itemTwo,example_itemThree]
-    
-    Test_rose = GildedRose.new.update_quality
-    Test_rose(list_items)
-
-    it "aged item increases by two if the sell in days havent passed " do
-      expect(list_items[0].quality).to eql(12)
-    end
+  before(:each) do
+    @items = Item.new
+    @gilded_rose = GildedRose.new(@items)
   end
-=======
-  describe
->>>>>>> 31f160f77dc290284dbfd0263161d4526d76ea9a
+
+  describe '#update_quality' do
+    it 'does not change the name' do
+      @items.name = 'Aged Brie'
+      @gilded_rose.update_quality
+      expect(@items.quality).to eq(2)
+      expect(@items.name).to eq 'Aged Brie'
+    end
+
+  #   it 'lowers the sell_in value by 1' do
+  #     @items.sell_in = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.sell_in).to eq 9
+  #   end
+
+  #   it 'lowers the quality by 1' do
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 9
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 8
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 8
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 8
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 8
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_rose.update_quality
+  #     expect(@items.quality).to eq 8
+  #   end
+
+  #   it 'lowers the quality by 2 when sell_in is 0' do
+  #     @items.sell_in = 0
+  #     @items.quality = 10
+  #     @gilded_
+  # end
+
+
 end

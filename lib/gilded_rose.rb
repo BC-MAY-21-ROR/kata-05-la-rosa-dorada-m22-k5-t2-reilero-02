@@ -48,11 +48,8 @@ class GildedRose
   end
 end
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 31f160f77dc290284dbfd0263161d4526d76ea9a
 # Class Item
 class Item
   attr_accessor :name, :sell_in, :quality
@@ -68,9 +65,9 @@ class Item
   end
 end
 
-item1 = Item.new('Fiebre monil', 5, 50)
-item2 = Item.new('Covitz', 2, 25)
-item3 = Item.new('Aged Brie', 15, 22)
+item1 = Item.new('Aged Brie', 5, 50)
+item2 = Item.new('Sulfuras' , 2, 25)
+item3 = Item.new('Backstage passes', 15, 22)
 
 items = [item1, item2, item3]
 rose = GildedRose.new(items)
