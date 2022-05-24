@@ -1,9 +1,9 @@
 # frozen_string_literal: true
-require 'rspec'
-require_relative'../lib/gilded_rose'
 
+require_relative 'gilded_rose'
 
 describe GildedRose do
+<<<<<<< HEAD
   
   
   describe GildedRose do
@@ -25,4 +25,7 @@ describe GildedRose do
       expect(list_items[0].quality).to eql(12)
     end
   end
+=======
+  describe
+>>>>>>> 31f160f77dc290284dbfd0263161d4526d76ea9a
 end
